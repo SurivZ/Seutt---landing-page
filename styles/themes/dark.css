@@ -1,0 +1,12 @@
+:root {
+  --color-primary: #3b82f6;
+  --color-secondary: #8b5cf6;
+  --color-accent: #fbbf24;
+  --color-bg: #111827;
+  --color-text: #e5e7eb;
+  --color-text-muted: #9ca3af;
+  --color-nav-bg: rgba(17, 24, 39, 0.95);
+  --color-card-bg: #1f2937;
+  --color-input-bg: #1f2937;
+  --color-input-border: #374151;
+}
