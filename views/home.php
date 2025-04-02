@@ -87,7 +87,15 @@
             </div>
 
             <div class="contact-form">
-                <form id="contactForm" method="POST">
+                <form id="contactForm" method="POST" action="/">
+                    <?php if (isset($success_message)): ?>
+                        <div class="alert alert-success"><?php echo htmlspecialchars($success_message); ?></div>
+                    <?php endif; ?>
+
+                    <?php if (isset($error_message)): ?>
+                        <div class="alert alert-error"><?php echo htmlspecialchars($error_message); ?></div>
+                    <?php endif; ?>
+
                     <div class="form-group">
                         <label for="name">Nombre</label>
                         <input type="text" id="name" name="name" autocomplete="name" required>

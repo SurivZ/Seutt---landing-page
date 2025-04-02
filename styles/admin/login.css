@@ -1,0 +1,110 @@
+:root {
+  --admin-bg: #111827;
+  --admin-card: #1f2937;
+  --admin-primary: #6366f1;
+  --admin-danger: #ef4444;
+  --admin-text: #f3f4f6;
+  --admin-text-muted: #9ca3af;
+  --admin-border: #374151;
+  --admin-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+body {
+  overflow: hidden;
+}
+
+.admin-login {
+  background-color: var(--admin-bg);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.login-container {
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-form {
+  background-color: var(--admin-card);
+  border-radius: 0.5rem;
+  padding: 2rem;
+  box-shadow: var(--admin-shadow);
+  text-align: center;
+}
+
+.login-logo {
+  margin-bottom: 1.5rem;
+}
+
+.login-logo img {
+  height: 60px;
+  width: auto;
+}
+
+.login-title {
+  color: var(--admin-primary);
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--admin-text);
+  font-size: 0.875rem;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.75rem 0;
+  background-color: #111827;
+  border: 1px solid var(--admin-border);
+  border-radius: 0.375rem;
+  color: var(--admin-text);
+  font-size: 1rem;
+  text-align: center;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: var(--admin-primary);
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+}
+
+.btn-login {
+  width: 100%;
+  max-width: 300px;
+  padding: 0.75rem;
+  background-color: var(--admin-primary);
+  color: white;
+  border: none;
+  border-radius: 0.375rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin: 0 auto;
+  display: block;
+}
+
+.btn-login:hover {
+  background-color: #4f46e5;
+}
+
+.alert-error {
+  background-color: rgba(239, 68, 68, 0.1);
+  color: var(--admin-danger);
+  padding: 1rem;
+  border-radius: 0.375rem;
+  margin-bottom: 1.5rem;
+  border-left: 4px solid var(--admin-danger);
+  text-align: left;
+}

@@ -65,8 +65,7 @@ function updateActiveNav() {
       document
         .querySelector(`.nav-link[href="/${currentHash}"]`)
         ?.classList.add("active");
-    }
-    else {
+    } else {
       document.querySelector('.nav-link[href="/"]')?.classList.add("active");
     }
   }
@@ -189,17 +188,6 @@ document.addEventListener("DOMContentLoaded", function () {
         window.location.href = "/";
       }
     }, 1000);
-  }
-
-  const contactForm = document.getElementById("contactForm");
-  if (contactForm) {
-    contactForm.addEventListener("submit", function (e) {
-      e.preventDefault();
-      alert(
-        "Gracias por tu mensaje. Nos pondremos en contacto contigo pronto."
-      );
-      this.reset();
-    });
   }
 
   const header = document.getElementById("header");
